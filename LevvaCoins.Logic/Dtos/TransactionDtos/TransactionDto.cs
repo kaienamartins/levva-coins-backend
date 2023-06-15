@@ -1,13 +1,14 @@
 ﻿using LevvaCoins.Domain.Enums;
+using LevvaCoins.Logic.Dtos.CategoryDtos;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace LevvaCoins.Domain.Models
+namespace LevvaCoins.Logic.Dtos.TransactionDtos
 {
-    public class Transaction
+    public class TransactionDto
     {
         public int Id
         {
@@ -29,19 +30,7 @@ namespace LevvaCoins.Domain.Models
         {
             get; set;
         }
-        public int CategoryId
-        {
-            get; set;
-        }
-        public virtual Category Category
-        {
-            get; set;
-        }
-        public int UserId
-        {
-            get; set;
-        }
-        public virtual User User
+        public CategoryDto Category
         {
             get; set;
         }

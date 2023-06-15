@@ -5,23 +5,15 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace LevvaCoins.Domain.Models
+namespace LevvaCoins.Logic.Dtos.TransactionDtos
 {
-    public class Transaction
+    public class CreateTransactionDto
     {
-        public int Id
-        {
-            get; set;
-        }
         public string Description
         {
             get; set;
         }
         public decimal Amount
-        {
-            get; set;
-        }
-        public DateTime CreatedAt
         {
             get; set;
         }
@@ -33,15 +25,7 @@ namespace LevvaCoins.Domain.Models
         {
             get; set;
         }
-        public virtual Category Category
-        {
-            get; set;
-        }
         public int UserId
-        {
-            get; set;
-        }
-        public virtual User User
         {
             get; set;
         }
